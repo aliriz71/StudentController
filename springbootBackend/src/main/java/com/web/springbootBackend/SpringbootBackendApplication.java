@@ -1,20 +1,24 @@
 package com.web.springbootBackend;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
-import com.web.springbootBackend.entity.Student;
 import com.web.springbootBackend.repository.StudentRepo;
 
 @SpringBootApplication
-public class SpringbootBackendApplication implements CommandLineRunner {
+public class SpringbootBackendApplication{
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootBackendApplication.class, args);
-	}
-	@Autowired
+		
+		
+	
+	}	
+	
+	
+/*	@Autowired
 	private StudentRepo studentRepo;
 		
 	@Override
@@ -36,5 +40,5 @@ public class SpringbootBackendApplication implements CommandLineRunner {
 		studentRepo.save(student2);
 
 	}
-
+	*/
 }

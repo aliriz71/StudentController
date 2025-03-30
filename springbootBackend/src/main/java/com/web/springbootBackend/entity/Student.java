@@ -22,8 +22,11 @@ public class Student {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int studentNum;
 	
-	@Column(name = "studentName", nullable = false)
-	private String studentName;
+	@Column(name = "studentFirstName", nullable = false)
+	private String studentFirstName;
+	
+	@Column(name = "studentLastName", nullable = false)
+	private String studentLastName;
 	
 	@Column(name = "studentEmail", nullable = false, unique = true)
 	private String studentEmail;
